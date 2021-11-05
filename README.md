@@ -17,7 +17,7 @@ desde [GitHub](https://github.com/) con:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("matcasti/proyectosANID")
+devtools::install_github("SEREMICTCI/proyectosANID")
 ```
 
 ## Datos
