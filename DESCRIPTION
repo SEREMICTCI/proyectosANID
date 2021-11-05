@@ -13,10 +13,10 @@ License: CC0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
-URL: https://github.com/matcasti/proyectosANID
-BugReports: https://github.com/matcasti/proyectosANID/issues
+URL: https://github.com/SEREMICTCI/proyectosANID
+BugReports: https://github.com/SEREMICTCI/proyectosANID/issues
 Depends: 
     R (>= 2.10)
 LazyData: true
 Imports: 
-    data.table (>= 1.14.2)
+    tibble (>= 3.1.5)
