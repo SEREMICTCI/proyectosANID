@@ -4,6 +4,7 @@
 library(data.table)
 library(stringi)
 library(parallel)
+library(tibble)
 
 # Descargar los datos -------------------------------------------------------------------------
 
@@ -142,6 +143,8 @@ proyectosanid_raw[i = region_ejecucion %chin% c("11. AYSEN", "12. MAGALLANES Y A
 hoja_consulta <- data.table::fread(input = "data-raw/ubicacion_institucion.csv")
 proyectosanid <- data.table::merge.data.table(x = proyectosanid_raw, y = hoja_consulta, by = c("region_ejecucion", "institucion_principal"), all.x = TRUE)
 
+## Lo traspasamos a formato tibble - más amigable para explorar los datos
+proyectosanid <- tibble::as_tibble(proyectosanid)
 
 # Comprobación final --------------------------------------------------------------------------
 
