@@ -49,4 +49,9 @@ Para ver la documentación de los datos basta con escribir esto en tu consola de
 help(proyectosanid)
 ```
 
-O puedes hacer click aquí: `proyectosANID::proyectosanid`
+Para citar este paquete puedes escribir lo siguiente en tu consola de `R`:
+
+```{r}
+citation("proyectosANID")
+```
+

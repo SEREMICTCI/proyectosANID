@@ -42,4 +42,25 @@ consola de `R`:
 help(proyectosanid)
 ```
 
-O puedes hacer click aquí: `proyectosANID::proyectosanid`
+Para citar este paquete puedes escribir lo siguiente en tu consola de
+`R`:
+
+``` r
+citation("proyectosANID")
+#> 
+#> To cite package 'proyectosANID' in publications use:
+#> 
+#>   Matías Castillo Aguilar and Carlos Morales Quiroz (2021).
+#>   proyectosANID: Proyectos Histórico ANID. R package version
+#>   0.0.0.9000. https://github.com/matcasti/proyectosANID
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {proyectosANID: Proyectos Histórico ANID},
+#>     author = {Matías {Castillo Aguilar} and Carlos {Morales Quiroz}},
+#>     year = {2021},
+#>     note = {R package version 0.0.0.9000},
+#>     url = {https://github.com/matcasti/proyectosANID},
+#>   }
+```
