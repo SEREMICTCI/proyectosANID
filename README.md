@@ -41,3 +41,5 @@ consola de `R`:
 ``` r
 help(proyectosanid)
 ```
+
+O puedes hacer click aquí: `proyectosANID::proyectosanid`
