@@ -6,7 +6,7 @@ Authors@R:
     c(
       person("Matías", "Castillo Aguilar", , "m99castillo@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-7291-247X")),
-      person("Carlos", "Morales Quiroz", , "csmorales@minciencia.gob.cl", role = c("aut", "abr"))
+      person("Carlos", "Morales Quiroz", , "csmorales@minciencia.gob.cl", role = c("aut", "ctb"))
     )
 Description: Acceso a los datos y herramientas accesorias para la exploración y visualización de los datos de adjudicación de proyectos históricos de ANID.
 License: CC BY 4.0
