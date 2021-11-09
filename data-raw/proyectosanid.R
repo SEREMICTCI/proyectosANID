@@ -148,4 +148,5 @@ proyectosanid <- tibble::as_tibble(proyectosanid)
 
 # Comprobación final --------------------------------------------------------------------------
 
+readr::write_csv(proyectosanid, file = "data-raw/proyectosanid.csv")
 usethis::use_data(proyectosanid, overwrite = TRUE)

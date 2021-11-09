@@ -4,6 +4,9 @@
 # proyectosANID
 
 <!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 El objetivo del paquete proyectosANID es proveer acceso a los datos y
@@ -52,7 +55,7 @@ citation("proyectosANID")
 #> 
 #>   Matías Castillo Aguilar and Carlos Morales Quiroz (2021).
 #>   proyectosANID: Proyectos Histórico ANID. R package version
-#>   0.0.0.9000. https://github.com/matcasti/proyectosANID
+#>   0.0.0.9000. https://github.com/SEREMICTCI/proyectosANID
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
@@ -61,6 +64,6 @@ citation("proyectosANID")
 #>     author = {Matías {Castillo Aguilar} and Carlos {Morales Quiroz}},
 #>     year = {2021},
 #>     note = {R package version 0.0.0.9000},
-#>     url = {https://github.com/matcasti/proyectosANID},
+#>     url = {https://github.com/SEREMICTCI/proyectosANID},
 #>   }
 ```
