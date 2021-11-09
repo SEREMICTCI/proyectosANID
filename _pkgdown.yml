@@ -1,2 +1,30 @@
 url: https://seremictci.github.io/proyectosANID
 
+navbar:
+  structure:
+    left:
+    - home
+    - reference
+    - datos
+    - news
+    right: github
+  components:
+    home:
+      icon: fas fa-home fa-lg
+      href: index.html
+    reference:
+      text: Documentación
+      href: reference/index.html
+    datos:
+      text: Datos
+      menu:
+      - text: Scripts
+      - text: Tratamiento inicial
+        hre: https://github.com/SEREMICTCI/proyectosANID/blob/master/data-raw/proyectosanid.R
+      - text: ----
+      - text: Descargar los datos
+      - text: CSV
+        hre: https://raw.githubusercontent.com/SEREMICTCI/proyectosANID/master/data-raw/proyectosanid.csv
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/SEREMICTCI/proyectosANID/
