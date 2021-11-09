@@ -20,11 +20,11 @@ navbar:
       menu:
       - text: Scripts
       - text: Tratamiento inicial
-        hre: https://github.com/SEREMICTCI/proyectosANID/blob/master/data-raw/proyectosanid.R
+        href: https://github.com/SEREMICTCI/proyectosANID/blob/master/data-raw/proyectosanid.R
       - text: ----
       - text: Descargar los datos
       - text: CSV
-        hre: https://raw.githubusercontent.com/SEREMICTCI/proyectosANID/master/data-raw/proyectosanid.csv
+        href: https://raw.githubusercontent.com/SEREMICTCI/proyectosANID/master/data-raw/proyectosanid.csv
     github:
       icon: fab fa-github fa-lg
       href: https://github.com/SEREMICTCI/proyectosANID/
