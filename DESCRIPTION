@@ -1,6 +1,6 @@
 Package: proyectosANID
 Title: Proyectos Histórico ANID
-Date: 2022-03-01
+Date: 2022-03-06
 Version: 0.0.0.9000
 Authors@R: 
     c(
@@ -8,7 +8,10 @@ Authors@R:
            comment = c(ORCID = "0000-0001-7291-247X")),
       person("Carlos", "Morales Quiroz", , "csmorales@minciencia.gob.cl", role = c("aut", "ctb"))
     )
-Description: Acceso a los datos y herramientas accesorias para la exploración y visualización de los datos de adjudicación de proyectos históricos de ANID.
+Description: 
+    Acceso a los datos y herramientas accesorias para la exploración y visualización 
+    de la información de adjudicación de proyectos históricos de la Agencia Nacional
+    de Investigación y Desarrollo (ANID), Chile.
 License: CC0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
