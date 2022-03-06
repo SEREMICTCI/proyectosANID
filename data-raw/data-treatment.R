@@ -105,6 +105,14 @@
   ## Nota monto
   proyectosanid_raw[nota_monto %like% "SIN INFO", nota_monto := NA]
 
+  ## Código proyecto
+  proyectosanid_raw[, codigo_proyecto := stringi::stri_trans_general(codigo_proyecto, id = "latin-ascii")]
+  proyectosanid_raw[, codigo_proyecto := iconv(codigo_proyecto, to = "ASCII", sub = "")]
+
+  ## Disciplina
+  proyectosanid_raw[, disciplina := stringi::stri_trans_general(disciplina, id = "latin-ascii")]
+  proyectosanid_raw[, disciplina := iconv(disciplina, to = "ASCII", sub = "")]
+
   ## Eliminamos todos los espacios en blanco extras
   proyectosanid_raw[, (char_vars) := lapply(.SD, trimws), .SDcols = char_vars]; rm(char_vars)
 
