@@ -1,10 +1,10 @@
 Package: proyectosANID
 Title: Proyectos Histórico ANID
-Date: 2021-11-5
+Date: 2022-03-01
 Version: 0.0.0.9000
 Authors@R: 
     c(
-      person("Matías", "Castillo Aguilar", , "m99castillo@gmail.com", role = c("aut", "cre"),
+      person("Matías", "Castillo Aguilar", , "matcasti@umag.cl", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-7291-247X")),
       person("Carlos", "Morales Quiroz", , "csmorales@minciencia.gob.cl", role = c("aut", "ctb"))
     )
