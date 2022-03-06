@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/SEREMICTCI/proyectosANID/workflows/R-CMD-check/badge.svg)](https://github.com/SEREMICTCI/proyectosANID/actions)
+[![CRAN status](https://www.r-pkg.org/badges/version/proyectosANID)](https://CRAN.R-project.org/package=proyectosANID)
 <!-- badges: end -->
 
 El objetivo del paquete proyectosANID es proveer acceso a los datos y herramientas accesorias para la exploración y visualización de los datos históricos de adjudicación de proyectos de ANID.
