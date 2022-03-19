@@ -6,6 +6,7 @@
 
 # Descargar los datos -------------------------------------------------------------------------
 
+
   ## Descargamos el archivo si no existe
   if (!file.exists("data-raw/rawdata.csv")) {
     ## Obtenemos URL del repositorio donde están alojados los datos
@@ -161,6 +162,8 @@
   proyectosanid_raw[, ano_finalizacion := (ano_fallo + (duracion_meses / 12))]
 
   ## Ubicación de la institución
+  proyectosanid_raw[, ubicacion_institucion := region_ejecucion]
+
   ## Estado: Pospuesto hasta obtener una solución más transversal
   ## y permanente que vaya más allá de la macrozona austral.
   ## Posiblemente una hoja de consulta pueda ser una alternativa.
@@ -193,7 +196,16 @@
   # rm(search., cl, m_names)
 
 
+# Estandarización nombres ---------------------------------------------------------------------
+
+
+  ## MZ Austral
+  th_nr <- fread("data-raw/helpers/th-mz_austral-nombres_responsables.csv")
+  proyectosanid_raw[th_nr, nombre_responsable := i.cambio, on = "nombre_responsable"]; rm(th_nr)
+
+
 # Exportación final ---------------------------------------------------------------------------
+
 
   ## Lo traspasamos a formato tibble - más amigable para explorar los datos
   proyectosanid = tibble::as_tibble(proyectosanid_raw); rm(proyectosanid_raw)
