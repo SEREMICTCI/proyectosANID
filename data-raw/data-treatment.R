@@ -36,15 +36,6 @@
   ## Eliminamos los carácteres especiales (non-ASCII)
   proyectosanid_raw[, institucion_principal := iconv(institucion_principal, to = "ASCII", sub = "")]
 
-  ## Comprobamos que las instituciones de búsqueda del tesauro son las mismas que las de la base de datos
-  x <- sort(th_ip$institucion_principal)
-  y <- sort(unique(proyectosanid_raw$institucion_principal))
-
-  cbind(y[y != x], x[y != x])  ## Si hay incongruencias
-  y[which(y != x)]             ## aparecerán aquí
-
-  identical(x, y); rm(x, y)    ## Si los elementos no son idénticos se devolverá FALSE
-
   ## Asignamos las instituciones estandarizadas
   proyectosanid_raw[th_ip, institucion_principal := i.cambio, on = "institucion_principal"]; rm(th_ip)
 
@@ -168,7 +159,7 @@
 
 
   ## MZ Austral
-  th_nr <- fread("data-raw/helpers/th-mz_austral-nombres_responsables.csv")
+  th_nr = fread("data-raw/helpers/th-mz_austral-nombres_responsables.csv")
   proyectosanid_raw[th_nr, nombre_responsable := i.cambio, on = "nombre_responsable"]; rm(th_nr)
 
 
